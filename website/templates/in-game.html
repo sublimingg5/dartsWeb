@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a9c44796a6.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+        <script src="js/form-validation.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mystyle.css')}}"/>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='menus.css')}}"/>
+        <div class="flex-container">
+            <div class="options-container">
+                <button id="go-back-button" class="fa-solid fa-circle-arrow-left fa-2xl"></button>
+                <script type="text/javascript">
+                    document.getElementById("go-back-button").onclick = function () {
+                       
+                    };
+                </script>
+            </div>
+            <div class="options-container">
+                <button id="exit-button" class="fa-solid fa-circle-xmark fa-2xl"></button>
+                <script type="text/javascript">
+                    document.getElementById("exit-button").onclick = function () {
+                        location.href="/"
+                    };
+                </script>
+            </div>
+        </div>
+        <h1 class="prevent-select">Round n°</h1>
+        <link rel="stylesheet" media="(max-width: 720px)" href="example.css" />
+    </head>
+    <body>
+        <div class="grid-container option-desc">
+            <form class="create-player-form" id="create-player-form">
+                <fieldset>
+                        <input type="text" id="current-player" name="current-player"> 
+                </fieldset>
+                <div class="submit" id="submit-box">
+                    <button class="submit-button" type="submit">Save Score</button>
+                    <button class="submit-button" type="button">Pass</button>
+                </div>
+                <div class="errors" id="errors">
+                </div>
+            </form>
+        </div> 
+        <!--<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+        <script src="close-button.js"></script>-->
+        
+        <!--<div id="close-button"></div>-->
+       
+    </body>
+    <footer>
+    </footer>
+</html>
